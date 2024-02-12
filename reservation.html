@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/fav-icon.png" type="image/x-icon">
+    <title>Reservations - Halalbaik</title>
+
+    <link rel="stylesheet" href="./assets/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+    
+    <main>
+        <div class="d-flex">
+            <div class="col-left pe-0" >
+                <div class="main-left-side-area ">
+                    <header class="header bb">
+                        <div class="container-min">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="./assets/img/logo.png" alt="Halalbaik">
+                                    </a>
+                                </div>
+                                <div class="search-menu d-flex">
+                                    <div class="search-box">
+                                        <img src="./assets/img/icons/search.svg" alt="Search Icon">
+                                        <input type="text" class="input">
+                                    </div>
+                                    <div class="menu ps-3">
+                                        <img src="./assets/img/icons/menu-button.svg" class="default-menu-image" alt="Menu Button">
+                                        <img src="./assets/img/icons/menu-button-close.svg" class="active-menu-image d-none" alt="Menu Button">
+
+                                        <div class="menus">
+                                            <ul class="menu-items">
+                                                <li class="mb-3 pb-3 bb">
+                                                    <a href="index.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s">Home</a>
+                                                </li>
+                                                <!-- <li class="mb-3 pb-3 bb">
+                                                    <a href="./cart.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s">My Cart <span class="badge rounded-pill bg-base-1 color-a py-2 px-3 ms-3">02</span></a>
+                                                </li> -->
+                                                <!-- <li class="mb-3 pb-3 bb">
+                                                    <a href="./orders.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s">My Order  <span class="badge rounded-pill bg-base-1 color-a py-2 px-3 ms-3">03</span></a>
+                                                </li> -->
+                                                <li class="mb-3 pb-3 bb">
+                                                    <a href="./favourite.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s">Favourites</a>
+                                                </li>
+                                                <li class="mb-3 pb-3 bb">
+                                                    <a href="./about.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s">About</a>
+                                                </li>
+                                                <li class="mb-3 pb-3 bb">
+                                                    <a href="./reservation.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s color-a-active">Reservation</a>
+                                                </li>
+                                                <li class="mb-3 pb-3 bb">
+                                                    <a href="contact.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s">Contact</a>
+                                                </li>
+                                                <li class="mb-3 pb-3">
+                                                    <a href="./login.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s">Login</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+
+                    <section class="spacer-top"></section>
+                    <section class="contact-section pt-5">
+                        <div class="container-min">
+                            <div class="text-center">
+                                <h1 class="fs-2 fw-bold" >RESERVATION</h1>
+                                <span class="color-paragraph">Book your table online for a seamless dining experience <br> at our restaurant. Enjoy delightful moments.</span>
+                            </div>
+
+                            <div class="reservation-form-container pt-5">
+                                <div class="row mb-5">
+                                    <div class="col-md-4">
+                                        <select type="text" class="input border-00 border-2 bb" >
+                                            <option value="#">1 Person</option>
+                                            <option value="#">2 Person</option>
+                                            <option value="#">3 Person</option>
+                                            <option value="#">4 Person</option>
+                                            <option value="#">5 Person</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select type="text" class="input border-00 border-2 bb" >
+                                            <option value="#">Table</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="datetime-local" class="input border-00 border-2 bb" placeholder="test" >
+                                    </div>
+                                </div>
+                                <div class="row mb-5">
+                                    <div class="col-md-4">
+                                        <input type="text" placeholder="Name" class="input border-00 border-2 bb" >
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" placeholder="Contact" class="input border-00 border-2 bb" >
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" placeholder="Email" class="input border-00 border-2 bb" >
+                                    </div>
+                                </div>
+                                <div class="row mb-5">
+                                    <div class="col-md-12">
+                                        <textarea type="text" placeholder="Special Requests" class="input border-00 border-2 bb" cols="50" rows="6"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row mb-5">
+                                    <div class="col-md-12">
+                                        <button class="button button-a-reverse py-2 full-width">
+                                            Book A Table Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    
+
+                </div>
+            </div>
+            <div class="col-right">
+                <div class="main-right-side-area">
+                    <div class="right-area-dynamic-image" style="background: url(./assets/img/reservation-right-side-area.jpg);"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   
+
+
+</body>
+
+<script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/js/app.js"></script>
+
+
+</html>
+
+
+
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/fav-icon.png" type="image/x-icon">
+    <title>Login - Halalbaik</title>
+
+    <link rel="stylesheet" href="./assets/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+    
+    <main>
+        <div class="d-flex">
+            <div class="col-left pe-0" >
+                <div class="main-left-side-area ">
+                    <header class="header bb">
+                        <div class="container-min">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="./assets/img/logo.png" alt="Halalbaik">
+                                    </a>
+                                </div>
+                                <div class="search-menu d-flex">
+                                    <div class="search-box">
+                                        <img src="./assets/img/icons/search.svg" alt="Search Icon">
+                                        <input type="text" class="input">
+                                    </div>
+                                    <div class="menu ps-3">
+                                        <img src="./assets/img/icons/menu-button.svg" class="default-menu-image" alt="Menu Button">
+                                        <img src="./assets/img/icons/menu-button-close.svg" class="active-menu-image d-none" alt="Menu Button">
+
+                                        <div class="menus">
+                                            <ul class="menu-items">
+                                                <li class="mb-3 pb-3 bb">
+                                                    <a href="index.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s">Home</a>
+                                                </li>
+                                                <!-- <li class="mb-3 pb-3 bb">
+                                                    <a href="./cart.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s">My Cart <span class="badge rounded-pill bg-base-1 color-a py-2 px-3 ms-3">02</span></a>
+                                                </li>
+                                                <li class="mb-3 pb-3 bb">
+                                                    <a href="./orders.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s">My Order  <span class="badge rounded-pill bg-base-1 color-a py-2 px-3 ms-3">03</span></a>
+                                                </li> -->
+                                                <li class="mb-3 pb-3 bb">
+                                                    <a href="./favourite.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s">Favourites</a>
+                                                </li>
+                                                <li class="mb-3 pb-3 bb">
+                                                    <a href="./about.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s">About</a>
+                                                </li>
+                                                <li class="mb-3 pb-3 bb">
+                                                    <a href="./reservation.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s">Reservation</a>
+                                                </li>
+                                                <li class="mb-3 pb-3 bb">
+                                                    <a href="contact.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s">Contact</a>
+                                                </li>
+                                                <li class="mb-3 pb-3">
+                                                    <a href="./login.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s color-a-active">Login</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+
+                    <section class="spacer-top"></section>
+
+                    <section class="login-form">
+                        <div class="row pt-5">
+                            <div class="col-md-9 mx-auto pt-5">
+                                <h1 class="fs-1 fw-semibold mb-5">Login</h1>
+
+                                <div class="row">
+                                    <div class="col-md-12 mb-5">
+                                        <input type="text" placeholder="Mobile number/email address" class="input border-00 border-2 bb rounded-0" >
+                                    </div>
+                                    <div class="col-md-12 mb-5 position-relative has-input-icon input-edit-optio">
+                                        <input type="password" placeholder="Password" class="password-field input border-00 border-2 bb rounded-0" >
+                                        <i class="password-open cursor-pointer d-none input-right-item position-absolute text d-none fa fa-eye color-paragraph"></i>
+                                        <i class="password-hide cursor-pointer input-right-item position-absolute text fa fa-eye-slash color-paragraph"></i>
+                                    </div>
+                                    <div class="col-md-12 mb-4">
+                                        <button class="button button-a-reverse py-2 full-width mb-3">
+                                            Login
+                                        </button>
+
+                                        <div class="d-flex justify-content-between"><span class="fw-normal">Create a new account? <a href="#" class="text-decoration-none color-a hover-color-b fw-semibold">Register</a></span> <span><a href="#" class="text-decoration-none color-paragraph hover-color-a">Forgot password?</a></span></div>
+
+                                    </div>
+                                    
+                                    <div class="col-md-12 mb-5 text-center">
+                                        <span class="p-2 bg-white">or</span> 
+                                        <span style="width: 60px; margin: 0px auto;margin-top: -12px;content: '';height: 1px; background: #5B6766;display: block;"></span>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <a href="#" class="text-decoration-none d-flex align-items-center color-paragraph border-2 link_button fw-semibold"> 
+                                            <img src="./assets/img/icons/google-logo.svg" class="me-2 " alt="Google"><span>Sign up with Google</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 d-flex align-items-center">
+                                        <a href="#" class="text-decoration-none d-flex align-items-center color-paragraph border-2 link_button"> 
+                                            <img src="./assets/img/icons/facebook-logo.svg" class="me-2 " alt="Facebook">Sign up with Facebook </span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+            <div class="col-right">
+                <div class="main-right-side-area">
+                    <div class="right-area-dynamic-image"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   
+
+
+</body>
+
+<script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/js/app.js"></script>
+
+
+</html>
+
+
+
+

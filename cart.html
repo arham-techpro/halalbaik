@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/fav-icon.png" type="image/x-icon">
+    <title>My Cart Items - Halalbaik</title>
+
+    <link rel="stylesheet" href="./assets/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+    
+    <main>
+        <div class="d-flex">
+            <div class="col-left pe-0" >
+                <div class="main-left-side-area ">
+                    <header class="header bb">
+                        <div class="container-min">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="./assets/img/logo.png" alt="Halalbaik">
+                                    </a>
+                                </div>
+                                <div class="search-menu d-flex">
+                                    <div class="search-box">
+                                        <img src="./assets/img/icons/search.svg" alt="Search Icon">
+                                        <input type="text" class="input">
+                                    </div>
+                                    <div class="menu ps-3">
+                                        <img src="./assets/img/icons/menu-button.svg" class="default-menu-image" alt="Menu Button">
+                                        <img src="./assets/img/icons/menu-button-close.svg" class="active-menu-image d-none" alt="Menu Button">
+
+                                        <div class="menus">
+                                            <ul class="menu-items">
+                                                <li class="mb-3 pb-3 bb">
+                                                    <a href="index.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s">Home</a>
+                                                </li>
+                                                <!-- <li class="mb-3 pb-3 bb">
+                                                    <a href="./cart.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s color-a-active">My Cart <span class="badge rounded-pill bg-base-1 color-a py-2 px-3 ms-3">02</span></a>
+                                                </li>
+                                                <li class="mb-3 pb-3 bb">
+                                                    <a href="./orders.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s ">My Order  <span class="badge rounded-pill bg-base-1 color-a py-2 px-3 ms-3">03</span></a>
+                                                </li> -->
+                                                <li class="mb-3 pb-3 bb">
+                                                    <a href="./favourite.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s">Favourites</a>
+                                                </li>
+                                                <li class="mb-3 pb-3 bb">
+                                                    <a href="./about.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s">About</a>
+                                                </li>
+                                                <li class="mb-3 pb-3 bb">
+                                                    <a href="./reservation.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s">Reservation</a>
+                                                </li>
+                                                <li class="mb-3 pb-3 bb">
+                                                    <a href="contact.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s">Contact</a>
+                                                </li>
+                                                <li class="mb-3 pb-3">
+                                                    <a href="./login.html" class="text-decoration-none fw-bold color-b hover-color-a transition-ease-3s">Login</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+
+                    <section class="menu-categories-section">
+                        <div class="container-min">
+                            <div class="row py-4">
+                                <div class="col-md-6 mb-3">
+                                    <div class="position-relative has-input-icon input-edit-option">
+                                        <img src="./assets/img/icons/cycle.svg" alt="Sycle Icon">
+                                        <input type="text" class="input fw-semibold ps-5" placeholder="Choose location">
+                                        <span class="input-right-item position-absolute text">Edit</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="position-relative has-input-icon input-edit-option">
+                                        <img src="./assets/img/icons/clock.svg" alt="Sycle Icon">
+                                        <input type="text" class="input fw-semibold ps-5" placeholder="Earliest arrival">
+                                        <span class="input-right-item position-absolute text">Edit</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="position-relative input-edit-option">
+                                        <input type="text" class="input fw-semibold px-2 " placeholder="Enter your code">
+                                        <button class="btn bg-a color-base-1 position-absolute btn-sm input-right-item">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="food-menu-section">
+                        <div class="menu-header">
+                            <div class="container-min d-flex justify-content-between align-items-center">
+                                <p class="color-b">My cart</p>
+                                <p class="color-a">Item - 02</p>
+                            </div>
+                            
+                        </div>
+                    </section>
+                    <section class="menu-items-food">
+                        <div class="container-min">
+                            <div class="food-items-container">
+                                
+                                <div class="single-food d-flex align-items-center justify-content-between">
+                                    <div class="food-left-side d-flex align-items-center">
+                                        <div class="food-img">
+                                            <img src="./assets/img/foods/pizza-all-pala.png" alt="Pizza All Pala">
+                                            <div class="favoutite-icons-container">
+                                                <img src="./assets/img/icons/heart-icon.svg" class="favourite-icon active-icon" alt="Favourite Icon">
+                                                <img src="./assets/img/icons/heart-active.svg" class="favourite-icon d-none" alt="Favourite Icon">
+                                            </div>
+                                        </div>
+                                        <div class="ms-3">
+                                            <h4>Pizza All Pala</h4>
+                                            <p>Your choice of 3 Spicy small size pizza</p>
+                                            <h3>21 SAR</h3>
+                                        </div>
+                                    </div>
+                                    <div class="food-action-side d-flex align-items-center">
+                                        <div class="wrap-quantity-button d-flex align-items-center">
+                                            <div id="sub" class="sub">
+                                                <img src="./assets/img/icons/minus-icon-border.svg" alt="Minus Icon">
+                                            </div>
+                                            <input class="count color-a" type="text" id="0" value="1" min="0" max="100" />
+                                            <div id="add" class="add">
+                                                <img src="./assets/img/icons/plus-icon-border.svg" alt="Plus Icon">
+                                            </div>
+                                        </div>
+                                        <div class="ms-3 font-18 fw-semibold">
+                                            21 SAR
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <button class="cart-add button button-a d-flex align-items-center justify-content-center py-2 has-img-hover-reverse">
+                                                <img src="./assets/img/icons/delete.svg" alt="Delete Icon">
+                                                <img src="./assets/img/icons/delete-white.svg" class="delete-white-icon d-none" alt="Delete Icon">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-food d-flex align-items-center justify-content-between">
+                                    <div class="food-left-side d-flex align-items-center">
+                                        <div class="food-img">
+                                            <img src="./assets/img/foods/salisbury-stack-burger.png" alt="salisbury-stack-burger">
+                                            <div class="favoutite-icons-container">
+                                                <img src="./assets/img/icons/heart-icon.svg" class="favourite-icon" alt="Favourite Icon">
+                                                <img src="./assets/img/icons/heart-active.svg" class="favourite-icon active-icon d-none" alt="Favourite Icon">
+                                            </div>
+                                        </div>
+                                        <div class="ms-3">
+                                            <h4>Salisbury Steak Burger</h4>
+                                            <p>Your choice of 1 Hemberger with extra cheesy</p>
+                                            <h3>12 SAR</h3>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="food-action-side d-flex align-items-center">
+                                        <div class="wrap-quantity-button d-flex align-items-center">
+                                            <div id="sub" class="sub">
+                                                <img src="./assets/img/icons/minus-icon-border.svg" alt="Minus Icon">
+                                            </div>
+                                            <input class="count color-a" type="text" id="0" value="2" min="0" max="100" />
+                                            <div id="add" class="add">
+                                                <img src="./assets/img/icons/plus-icon-border.svg" alt="Plus Icon">
+                                            </div>
+                                        </div>
+                                        <div class="ms-3 font-18 fw-semibold">
+                                            24 SAR
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <button class="cart-add button button-a d-flex align-items-center justify-content-center py-2 has-img-hover-reverse">
+                                                <img src="./assets/img/icons/delete.svg" alt="Delete Icon">
+                                                <img src="./assets/img/icons/delete-white.svg" class="delete-white-icon d-none" alt="Delete Icon">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="footer-buttons">
+                        <div class="container-min">
+                            <button class="button button-a-reverse full-width d-flex justify-content-between">
+                                <span class="badge py-2 px-3 op-10p">2</span>
+                                <span>Review Order</span>
+                                <span>45 SAR</span>
+                            </button>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+            <div class="col-right">
+                <div class="main-right-side-area">
+                    <div class="right-area-dynamic-image"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   
+
+
+</body>
+
+<script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/js/app.js"></script>
+
+
+</html>
+
+
+
+
