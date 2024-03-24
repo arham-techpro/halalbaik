@@ -61,4 +61,15 @@ $(document).ready(function(){
         $('.right-area-dynamic-image').css("background-image", "url(" + imageSrc + ")");
     });
 
+
+
+    $('.places-radios').click(function(ev){
+        ev.preventDefault();
+        $('.places-radios').removeClass('active-place');
+        $(ev.target.childNodes[1]).prop('checked', true);
+        $(ev.target).addClass('active-place');
+    });
+
+
+
 });

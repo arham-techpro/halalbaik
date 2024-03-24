@@ -24,7 +24,7 @@ Root Elements
 
 /* Colors */
 
-.color-a{
+.color-a,.active-place{
     color: var(--color-a);
 }
 .color-b{
@@ -57,11 +57,15 @@ Root Elements
 .bg-base-2{
     background: var(--color-base-2);
 }
-
+.bg-trans{
+    background: transparent;
+}
 .fw-semibold{
     font-weight: 600;
 }
-
+.fw-500{
+    font-weight: 500;
+}
 
 /* ``````````````````````````````````````````````
 Reusable Componant 
@@ -148,12 +152,28 @@ body{
     color: #fafafa;
     background: var(--color-a);
 }
+.button-dark{
+    background: var(--color-b);
+    color: var(--color-base-1);
+}
+.button-dark:hover{
+    color: var(--color-b);
+    background: var(--color-base-1);
+}
 .order-method-tab.active{
     color: #fafafa !important;
     background: var(--color-a) !important;
 }
 .button-a-reverse:hover{
     background: var(--color-b);
+}
+.button-light{
+    background: var(--color-paragraph-2);
+    color: var(--color-b);
+}
+.button-light:hover{
+    background: var(--color-b);
+    color: var(--color-paragraph-2);
 }
 .food-items-container {
     padding-bottom: 80px;
@@ -402,6 +422,61 @@ body.hasOverly::before {
 .w-50p{
     width: 50%;
 }
+.has-mb-10:not(:last-child){
+    margin-bottom: 10px;
+}
+
+
+label.places-radios {
+    padding-left: 30px;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 19px;
+    width: 19px;
+    background-color: #F4F3F3;
+    border-radius: 50%;
+
+}
+
+.places-radios:hover input ~ .checkmark {
+    background-color: var(--color-b);
+}
+
+.places-radios input:checked ~ .checkmark {
+    background-color: var(--color-a);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.places-radios input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.places-radios .checkmark:after {
+    left: 7.9px;
+    top: 4px;
+    width: 4px;
+    height: 9px;
+    display: block;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.step{
+    display: none;
+}
+
 
 /* ``````````````````````````````````````````````
 Right Area feDiffuseLighting
@@ -442,3 +517,8 @@ Right Area feDiffuseLighting
     padding: 30px 50px;
 }
 
+@media screen and (min-width:1500px) {
+    .menus{
+        left: 1000px;
+    }
+}
