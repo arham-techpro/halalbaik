@@ -17,7 +17,6 @@ body[mdtimepicker-display="on"] {
   left: 0;
   right: 0;
   bottom: 0;
-  font-family: Roboto, sans-serif;
   font-size: 14px;
   background-color: rgba(10, 10, 10, 0.7);
   transition: background-color 0.28s ease;

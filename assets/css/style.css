@@ -607,6 +607,9 @@ Right Area feDiffuseLighting
     section.login-form {
         padding: 0px 20px;
     }
+    .mdtp__wrapper {
+        bottom: 150px;
+    }
 }
 @media screen and (max-width:400px){
     .container-min{
