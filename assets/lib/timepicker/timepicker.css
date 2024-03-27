@@ -1,12 +1,3 @@
-/*!Don't remove this!
- * jQuery MDTimePicker v1.0 plugin
- * 
- * Author: Dionlee Uy
- * Email: dionleeuy@gmail.com
- *
- * Date: Tuesday, August 28 2017
- */
-@import url(https://fonts.googleapis.com/css?family=Roboto);
 .mdtp__wrapper,
 body[mdtimepicker-display="on"] {
   overflow: hidden;
