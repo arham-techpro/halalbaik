@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./assets/lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/lib/timepicker/timepicker.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
@@ -370,13 +371,512 @@
                                 </div>
                             </div>
 
-                            <button class="button button-a-reverse full-width d-flex justify-content-between">
+                            <button class="button button-a-reverse full-width d-flex justify-content-between" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <span class="badge py-2 px-3 op-10p">2</span>
                                 <span>Review Order</span>
                                 <span>45 SAR</span>
                             </button>
+
                         </div>
                     </section>
+
+                    <!-- Modal -->
+                    <div class="modal fade open" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header justify-content-end border-0">
+                                    <div class="text-end">
+                                        <a href="javascript:void(0)" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-times p-2 rounded-pill color-b hover-color-a"></i></a>
+                                    </div>
+                                </div>
+                                <div class="modal-body pt-0 main-order-modal">
+                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item w-50p" role="presentation">
+                                          <button class="py-3 nav-link order-method-tab full-width active color-b fw-semibold hover-color-a" id="pills-delivery-tab" data-bs-toggle="pill" data-bs-target="#pills-delivery" type="button" role="tab" aria-controls="pills-delivery" aria-selected="true">Delivery</button>
+                                        </li>
+                                        <li class="w-50p " role="presentation">
+                                          <button class="py-3 nav-link order-method-tab full-width color-b fw-semibold hover-color-a" id="pills-pickup-tab" data-bs-toggle="pill" data-bs-target="#pills-pickup" type="button" role="tab" aria-controls="pills-pickup" aria-selected="false">Pickup</button>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tab-content" id="pills-tabContent">
+
+                                        <div class="tab-pane fade show active" id="pills-delivery" role="tabpanel" aria-labelledby="pills-delivery-tab" tabindex="0">
+                                            
+                                            <div class="step active">
+                                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="flush-headingOne">
+                                                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                          Makkah
+                                                        </button>
+                                                      </h2>
+                                                      <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                        <div class="accordion-body">
+                                                            <ul class="m-0 p-0">
+                                                                <li class="has-mb-10 d-flex align-items-center">
+                                                                    <label class="places-radios position-relative cursor-pointer" for="Jarwal">
+                                                                        <input type="radio" name="place_addr" class="d-none" id="Jarwal" checked>
+                                                                        <span class="checkmark"></span>Jarwal
+                                                                    </label>
+                                                                </li>
+                                                                
+                                                                <li class="has-mb-10 d-flex align-items-center">
+                                                                    <label class="places-radios position-relative cursor-pointer" for="Al_Qarah">
+                                                                        <input type="radio" name="place_addr" class="d-none" id="Al_Qarah" required>
+                                                                        <span class="checkmark"></span>Al Qarah
+                                                                    </label>
+                                                                </li>
+                                                                
+                                                                <li class="has-mb-10 d-flex align-items-center">
+                                                                    <label class="places-radios position-relative cursor-pointer" for="Al_Mahakim">
+                                                                        <input type="radio" name="place_addr" class="d-none" id="Al_Mahakim" required>
+                                                                        <span class="checkmark"></span>Al Mahakim
+                                                                    </label>
+                                                                </li>
+                
+                                                                <li class="has-mb-10 d-flex align-items-center">
+                                                                    <label class="places-radios position-relative cursor-pointer" for="At_Tandabawi">
+                                                                        <input type="radio" name="place_addr" class="d-none" id="At_Tandabawi" required>
+                                                                        <span class="checkmark"></span>At Tandabawi
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+    
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="flush-headingTwo">
+                                                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                          Madinah
+                                                        </button>
+                                                      </h2>
+                                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                        <div class="accordion-body">
+                                                           
+                                                                <ul class="m-0 p-0">
+                                                                    <li class="has-mb-10 d-flex align-items-center">
+                                                                        <label class="places-radios position-relative cursor-pointer" for="Al_Rayah">
+                                                                            <input type="radio" name="place_addr" class="d-none" id="Al_Rayah">
+                                                                            <span class="checkmark"></span>Al Rayah
+                                                                        </label>
+                                                                    </li>
+                                                                    
+                                                                    <li class="has-mb-10 d-flex align-items-center">
+                                                                        <label class="places-radios position-relative cursor-pointer" for="Qurban">
+                                                                            <input type="radio" name="place_addr" class="d-none" id="Qurban">
+                                                                            <span class="checkmark"></span>Qurban
+                                                                        </label>
+                                                                    </li>
+                                                                    
+                                                                    <li class="has-mb-10 d-flex align-items-center">
+                                                                        <label class="places-radios position-relative cursor-pointer" for="As_Sih">
+                                                                            <input type="radio" name="place_addr" class="d-none" id="As_Sih">
+                                                                            <span class="checkmark"></span>As Sih
+                                                                        </label>
+                                                                    </li>
+    
+                                                                    <li class="has-mb-10 d-flex align-items-center">
+                                                                        <label class="places-radios position-relative cursor-pointer" for="Al_Amidah">
+                                                                            <input type="radio" name="place_addr" class="d-none" id="Al_Amidah">
+                                                                            <span class="checkmark"></span>Al Amidah
+                                                                        </label>
+                                                                    </li>
+                                                                </ul>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="step">
+                                                <div class="row">
+                                                    <div class="col-lg-6 mb-3">
+                                                        <input type="text" placeholder="Makkah" class="input border-00 border-2 bb rounded-0" >
+                                                    </div>
+                                                    <div class="col-lg-6 mb-3">
+                                                        <input type="text" placeholder="Al Qarah" class="input border-00 border-2 bb rounded-0" >
+                                                    </div>
+                                                    <div class="col-lg-6 mb-3">
+                                                        <input type="text" placeholder="Block" class="input border-00 border-2 bb rounded-0" >
+                                                    </div>
+                                                    <div class="col-lg-6 mb-3">
+                                                        <input type="text" placeholder="House" class="input border-00 border-2 bb rounded-0" >
+                                                    </div>
+                                                    <div class="col-lg-6 mb-3">
+                                                        <input type="text" placeholder="Avenue" class="input border-00 border-2 bb rounded-0" >
+                                                    </div>
+                                                    <div class="col-lg-6 mb-4">
+                                                        <input type="text" placeholder="Zip code" class="input border-00 border-2 bb rounded-0" >
+                                                    </div>
+                                                    <div class="col-lg-12 mb-4">
+                                                        <input type="text" placeholder="Additional" class="input border-00 border-2 bb rounded-0" >
+                                                    </div>
+                                                    <div class="col-lg-12 ">
+                                                        
+                                                        <ul class="m-0 p-0 d-flex align-items-center">
+                                                            <li class="has-mb-10 d-flex align-items-center me-4">
+                                                                <label class="places-radios position-relative cursor-pointer" for="Jarwal">
+                                                                    <input type="radio" name="delivery_place" class="d-none" id="Jarwal" checked>
+                                                                    <span class="checkmark"></span>Home
+                                                                </label>
+                                                            </li>
+                                                            
+                                                            <li class="has-mb-10 d-flex align-items-center me-4">
+                                                                <label class="places-radios position-relative cursor-pointer" for="Al_Qarah">
+                                                                    <input type="radio" name="delivery_place" class="d-none" id="Al_Qarah" required>
+                                                                    <span class="checkmark"></span>Appartment
+                                                                </label>
+                                                            </li>
+                                                            
+                                                            <li class="has-mb-10 d-flex align-items-center">
+                                                                <label class="places-radios position-relative cursor-pointer" for="Al_Mahakim">
+                                                                    <input type="radio" name="delivery_place" class="d-none" id="Al_Mahakim" required>
+                                                                    <span class="checkmark"></span>Office
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="step">
+                                                <div class="mb-4">
+                                                    <p class="color-b fw-semibold">Delivery time</p>
+                                                    <span class=""><img src="./assets/img/icon-png/delivery-cycle.png" width="20px" class="me-2" alt="delivery-cycle"> Deliver in about 1 hour and 15 minutes</span>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <img src="./assets/img/order-location.jpg" alt="Order Location" class="full-width">
+                                                </div>
+
+                                                <div class="mb-3 d-flex justify-content-between">
+                                                    <span class="d-flex align-items-start" style="width: 240px;">
+                                                        <img src="./assets/img/icons/home.svg" width="20px" class="me-2" alt="delivery-cycle">
+                                                        <span class="fw-semibold">7903 Beir</span> Tawa, Jarwal, Makkah 24231, Saudi Arabia
+                                                    </span>
+                                                    <button  onclick="nextPrev(-1)" class="border-0 bg-trans"><img src="./assets/img/icons/pencil.svg" alt="Pencil Icon"></button>
+                                                </div>
+                                                <div class="mb-4 d-flex justify-content-between">
+                                                    <span class="d-flex align-items-center" style="width: 240px;">
+                                                        <img src="./assets/img/icons/phone.svg" width="20px" class="me-2" alt="delivery-cycle">
+                                                        <span class="fw-semibold">Karim,</span> +965452641258
+                                                    </span>
+                                                </div>
+
+                                                <div class="mb-4">
+                                                    <p class="color-b fw-semibold mb-2 bb pb-2 ">Items - <a href="cart.html" class="hover-color-a color-b">edit</a></p> 
+                                                   
+                                                    <div class="d-flex justify-content-between mb-2">
+                                                        <span><span class="color-a me-2">1X</span>Pizza All Pala</span>
+                                                        <span class="color-paragraph">21 SAR</span>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between">
+                                                        <span><span class="color-a me-2">2X</span>Salisbury Steak Burger</span>
+                                                        <span class="color-paragraph">24 SAR</span>
+                                                    </div>
+                                                </div>
+
+                                                <button class="button button-a-reverse full-width" onclick="nextPrev(1)">Confirm</button>
+                                            </div>
+
+                                            <div class="step">
+
+                                                <div class="mb-4">
+                                                    <p class="color-b fw-semibold mb-2">Promotions</p>
+                                                    <div class="position-relative input-edit-option">
+                                                        <input type="text" class="input fw-semibold px-2 " placeholder="Enter your code">
+                                                        <button class="btn bg-a color-base-1 position-absolute btn-sm input-right-item">Apply</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-4">
+                                                    <p class="color-b fw-semibold mb-2">Payment Method</p>
+                                                    <ul class="m-0 p-0 bb pb-4">
+                                                        <li class="has-mb-10 d-flex align-items-center justify-content-between">
+                                                            <label class="places-radios position-relative cursor-pointer" for="Cash_on_Delivery">
+                                                                <input type="radio" name="py_method" class="d-none" id="Cash_on_Delivery" checked>
+                                                                <span class="checkmark"></span>Cash on Delivery
+                                                            </label>
+                                                            <img src="./assets/img/icon-png/cash_on_delivery.jpg" width="20px" alt="Cash on Delivery">
+                                                        </li>
+                                                        
+                                                        <li class="has-mb-10 d-flex align-items-center justify-content-between">
+                                                            <label class="places-radios position-relative cursor-pointer" for="Debit_Card">
+                                                                <input type="radio" name="py_method" class="d-none" id="Debit_Card" required>
+                                                                <span class="checkmark"></span>Debit Card
+                                                            </label>
+                                                            <img src="./assets/img/icon-png/debit-card.jpg" width="20px" alt="Dabit Card">
+                                                        </li>
+                                                        
+                                                        <li class="has-mb-10 d-flex align-items-center justify-content-between">
+                                                            <label class="places-radios position-relative cursor-pointer" for="Credit_Card">
+                                                                <input type="radio" name="py_method" class="d-none" id="Credit_Card" required>
+                                                                <span class="checkmark"></span>Credit Card
+                                                            </label>
+                                                            <img src="./assets/img/icon-png/credit-card.png" width="20px" alt="Cradit Card">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="mb-4 pt-3">
+                                                    
+                                                    <div class="d-flex justify-content-between mb-2 color-paragraph">
+                                                        <span>Subtotal</span>
+                                                        <span class="color-paragraph">45 SAR</span>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between color-paragraph mb-2 ">
+                                                        <span>Delivery services</span>
+                                                        <span class="color-paragraph">7 SAR</span>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="color-b fw-semibold">Total</span>
+                                                        <span class="color-b fw-semibold">52 SAR</span>
+                                                    </div>
+                                                </div>
+
+
+                                                <button onclick="place_order()" class="button button-a-reverse full-width">Place Order</button>
+                                            </div>
+                                            
+                                            <div class="modal-footer p-0 mt-4 border-0">
+                                                <button class="button fw-500 button-light" id="prevBtn"  onclick="nextPrev(-1)">Back</button>
+                                                <button class="button fw-500 button-a-reverse" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                                            </div>
+
+                                        </div>
+                                        
+                                        <div class="tab-pane fade" id="pills-pickup" role="tabpanel" aria-labelledby="pills-pickup-tab" tabindex="0">
+                                           
+                                            <div class="accordion accordion-flush" id="accordionFlushExample2">
+
+                                                <div class="stepsPickup active">
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="flush-headingOne">
+                                                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                          Makkah
+                                                        </button>
+                                                      </h2>
+                                                      <div id="flush-collapseThree" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample2">
+                                                        <div class="accordion-body">
+                                                            
+                                                                <ul class="m-0 p-0">
+                                                                    <li class="has-mb-10 d-flex align-items-center">
+                                                                        <label class="places-radios position-relative cursor-pointer" for="Jarwal">
+                                                                            <input type="radio" name="pickup_place" class="d-none" id="Jarwal" checked>
+                                                                            <span class="checkmark"></span>Jarwal
+                                                                        </label>
+                                                                    </li>
+                                                                    
+                                                                    <li class="has-mb-10 d-flex align-items-center">
+                                                                        <label class="places-radios position-relative cursor-pointer" for="Al_Qarah">
+                                                                            <input type="radio" name="pickup_place" class="d-none" id="Al_Qarah">
+                                                                            <span class="checkmark"></span>Al Qarah
+                                                                        </label>
+                                                                    </li>
+                                                                    
+                                                                    <li class="has-mb-10 d-flex align-items-center">
+                                                                        <label class="places-radios position-relative cursor-pointer" for="Al_Mahakim">
+                                                                            <input type="radio" name="pickup_place" class="d-none" id="Al_Mahakim">
+                                                                            <span class="checkmark"></span>Al Mahakim
+                                                                        </label>
+                                                                    </li>
+    
+                                                                    <li class="has-mb-10 d-flex align-items-center">
+                                                                        <label class="places-radios position-relative cursor-pointer" for="At_Tandabawi">
+                                                                            <input type="radio" name="pickup_place" class="d-none" id="At_Tandabawi">
+                                                                            <span class="checkmark"></span>At Tandabawi
+                                                                        </label>
+                                                                    </li>
+                                                                </ul>
+    
+                                                            
+                                                        </div>
+                                                      </div>
+                                                    </div>
+    
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="flush-headingTwo">
+                                                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                                          Madinah
+                                                        </button>
+                                                      </h2>
+                                                      <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample2">
+                                                        <div class="accordion-body">
+                                                           
+                                                                <ul class="m-0 p-0">
+                                                                    <li class="has-mb-10 d-flex align-items-center">
+                                                                        <label class="places-radios position-relative cursor-pointer" for="Al_Rayah">
+                                                                            <input type="radio" name="pickup_place" class="d-none" id="Al_Rayah">
+                                                                            <span class="checkmark"></span>Al Rayah
+                                                                        </label>
+                                                                    </li>
+                                                                    
+                                                                    <li class="has-mb-10 d-flex align-items-center">
+                                                                        <label class="places-radios position-relative cursor-pointer" for="Qurban">
+                                                                            <input type="radio" name="pickup_place" class="d-none" id="Qurban">
+                                                                            <span class="checkmark"></span>Qurban
+                                                                        </label>
+                                                                    </li>
+                                                                    
+                                                                    <li class="has-mb-10 d-flex align-items-center">
+                                                                        <label class="places-radios position-relative cursor-pointer" for="As_Sih">
+                                                                            <input type="radio" name="pickup_place" class="d-none" id="As_Sih">
+                                                                            <span class="checkmark"></span>As Sih
+                                                                        </label>
+                                                                    </li>
+    
+                                                                    <li class="has-mb-10 d-flex align-items-center">
+                                                                        <label class="places-radios position-relative cursor-pointer" for="Al_Amidah">
+                                                                            <input type="radio" name="pickup_place" class="d-none" id="Al_Amidah">
+                                                                            <span class="checkmark"></span>Al Amidah
+                                                                        </label>
+                                                                    </li>
+                                                                </ul>
+    
+                                                            
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="stepsPickup">
+                                                    <div class="mb-4">
+                                                        <p class="color-b fw-semibold mb-4">Arrival time</p>
+
+                                                        <ul class="m-0 p-0 align-items-center">
+                                                            <li class="has-mb-10 d-flex align-items-center justify-content-between px-4 ">
+                                                                
+                                                                <label class="d-flex cursor-pointer" for="asap"><img src="./assets/img/icons/clock.svg" class="me-4" width="20px" alt="Clock Icon"> ASAP <br> 1h 30 min</label>
+                                                                <input type="radio" value="asap" name="pickup_time" class="custom_radio" id="asap" required>
+                                                                
+                                                            </li>
+                                                            
+                                                            <li class="has-mb-10 d-flex align-items-center justify-content-between px-4 ">
+                                                                
+                                                                <label class="d-flex cursor-pointer" for="shedule"><img src="./assets/img/icons/clock.svg" class="me-4" width="20px" alt="Clock Icon"> Schedule for later</label>
+                                                                <input type="radio" value="shedule" name="pickup_time" class="custom_radio" id="shedule" required>
+                                                                
+                                                            </li>
+                                                        </ul>
+
+                                                        <div class="px-4 timepicker_div">
+                                                            <input type="text" placeholder="Set yor Pickup time" class="mt-4 timepicker d-none input border-00 border-2 bb rounded-0 pickup_time_input" >
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="stepsPickup">
+                                                    <div class="mb-4">
+                                                        <p class="color-b fw-semibold mb-3">Pickup time</p>
+                                                        
+
+                                                        <span class="d-flex align-items-start mb-2" style="width: 240px;">
+                                                            <img src="./assets/img/icons/home.svg" width="20px" class="me-2" alt="delivery-cycle">
+                                                            <span>Pickup in <span class="fw-semibold"> 11:58 AM</span></span>
+                                                        </span>
+                                                        <span class="d-flex align-items-center" style="width: 240px;">
+                                                            <img src="./assets/img/icons/phone.svg" width="20px" class="me-2" alt="delivery-cycle">
+                                                            <span class="fw-semibold">Karim, </span> +965452641258
+                                                        </span>
+
+                                                    </div>
+                                                    <div class="mb-4">
+                                                        <img src="./assets/img/order-location.jpg" alt="Order Location" class="full-width">
+                                                    </div>
+    
+                                                    <div class="mb-4">
+                                                        <p class="color-b fw-semibold mb-2 bb pb-2 ">Items - <a href="cart.html" class="hover-color-a color-b">edit</a></p> 
+                                                       
+                                                        <div class="d-flex justify-content-between mb-2">
+                                                            <span><span class="color-a me-2">1X</span>Pizza All Pala</span>
+                                                            <span class="color-paragraph">21 SAR</span>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                            <span><span class="color-a me-2">2X</span>Salisbury Steak Burger</span>
+                                                            <span class="color-paragraph">24 SAR</span>
+                                                        </div>
+                                                    </div>
+    
+                                                    <button class="button button-a-reverse full-width" onclick="nextPrevpickup(1)">Confirm</button>
+                                                </div>
+
+                                                <div class="stepsPickup">
+                                                    <div class="mb-4">
+                                                        <p class="color-b fw-semibold mb-2">Promotions</p>
+                                                        <div class="position-relative input-edit-option">
+                                                            <input type="text" class="input fw-semibold px-2 " placeholder="Enter your code">
+                                                            <button class="btn bg-a color-base-1 position-absolute btn-sm input-right-item">Apply</button>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="mb-4">
+                                                        <p class="color-b fw-semibold mb-2">Payment Method</p>
+                                                        <ul class="m-0 p-0 bb pb-4">
+                                                            <li class="has-mb-10 d-flex align-items-center justify-content-between">
+                                                                <label class="places-radios position-relative cursor-pointer" for="Cash_on_Delivery">
+                                                                    <input type="radio" name="py_method" class="d-none" id="Cash_on_Delivery" checked>
+                                                                    <span class="checkmark"></span>Cash on Delivery
+                                                                </label>
+                                                                <img src="./assets/img/icon-png/cash_on_delivery.jpg" width="20px" alt="Cash on Delivery">
+                                                            </li>
+                                                            
+                                                            <li class="has-mb-10 d-flex align-items-center justify-content-between">
+                                                                <label class="places-radios position-relative cursor-pointer" for="Debit_Card">
+                                                                    <input type="radio" name="py_method" class="d-none" id="Debit_Card" required>
+                                                                    <span class="checkmark"></span>Debit Card
+                                                                </label>
+                                                                <img src="./assets/img/icon-png/debit-card.jpg" width="20px" alt="Dabit Card">
+                                                            </li>
+                                                            
+                                                            <li class="has-mb-10 d-flex align-items-center justify-content-between">
+                                                                <label class="places-radios position-relative cursor-pointer" for="Credit_Card">
+                                                                    <input type="radio" name="py_method" class="d-none" id="Credit_Card" required>
+                                                                    <span class="checkmark"></span>Credit Card
+                                                                </label>
+                                                                <img src="./assets/img/icon-png/credit-card.png" width="20px" alt="Cradit Card">
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+    
+                                                    <div class="mb-4 pt-3">
+                                                        
+                                                        <div class="d-flex justify-content-between mb-2 color-paragraph">
+                                                            <span>Subtotal</span>
+                                                            <span class="color-paragraph">45 SAR</span>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between color-paragraph mb-2 ">
+                                                            <span>Delivery services</span>
+                                                            <span class="color-paragraph">7 SAR</span>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                            <span class="color-b fw-semibold">Total</span>
+                                                            <span class="color-b fw-semibold">52 SAR</span>
+                                                        </div>
+                                                    </div>
+    
+    
+                                                    <button onclick="place_order()" class="button button-a-reverse full-width">Place Order</button>
+                                                </div>
+
+                                                <div class="modal-footer p-0 mt-4 border-0">
+                                                    <button class="button fw-500 button-light" id="prevBtn2"  onclick="nextPrevpickup(-1)">Back</button>
+                                                    <button class="button fw-500 button-a-reverse" id="nextBtn2" onclick="nextPrevpickup(1)">Next</button>
+                                                </div>
+
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -394,6 +894,8 @@
 </body>
 
 <script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/lib/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="./assets/lib/timepicker/timepicker.js"></script>
 <script src="./assets/js/app.js"></script>
 
 

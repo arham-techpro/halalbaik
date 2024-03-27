@@ -473,7 +473,17 @@ label.places-radios {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-.step{
+
+input.custom_radio[type=radio] {
+    accent-color: #5B6766;
+}
+input.custom_radio[type=radio]:checked {
+    accent-color: var(--color-a);
+}
+
+
+
+.step,.stepsPickup{
     display: none;
 }
 
@@ -521,4 +531,90 @@ Right Area feDiffuseLighting
     .menus{
         left: 1000px;
     }
+    .menu-category-container{
+        justify-content: center;
+    }
+
+}
+@media screen and (max-width:1410px){
+    .menu-category-container {
+        padding: 30px 0px;
+        gap: 34px;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .main-right-side-area,.col-right,.has-right-items-overly{
+        display: none;
+    }
+    .col-left,.header,.footer-buttons,.modal{
+        width: 100%;
+    }
+    .menus{
+        left: -100%;
+    }
+    .menu-category-container{
+        justify-content: center;
+    }
+}
+@media screen and (max-width:600px){
+    .container-min{
+        padding-left: 20px;
+    }
+    .menu-category-container {
+        overflow-x: scroll;
+    }
+    .menu-category-container{
+        justify-content: flex-start;
+    }
+    .link_button{
+        justify-content: center;
+        margin-bottom: 16px;
+    }
+    .menu-categories-section .container-min{
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+    .single-category:first-child{
+        padding-left: 20px;
+    }
+    .single-category:last-child{
+        padding-right: 20px;
+    }
+    .search-box input {
+        width: 210px;
+    }
+    .logo img {
+        width: 115px;
+    }
+    .food-action-side {
+        flex-direction: column;
+        gap: 14px;
+    }
+    .cart-add {
+        margin-left: 0px;
+    }
+    .footer-buttons{
+        bottom: -100%;
+    }
+    .food-left-side {
+        width: 270px;
+    }
+    .reservation-form-container input, .reservation-form-container select, .reservation-form-container textarea{
+        margin-bottom: 16px;
+    }
+    section.login-form {
+        padding: 0px 20px;
+    }
+}
+@media screen and (max-width:400px){
+    .container-min{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .search-box input {
+        width: 180px;
+    }
+    
 }
